@@ -70,6 +70,7 @@ main{
   grid-column: 2;
 
 }
+
 #ficha img.foto{
   width: 200px;
   aspect-ratio: 1/1;
@@ -116,8 +117,9 @@ main{
   color: var(--destaque);
 }
 
-#detalhes{
+ #detalhes{
   grid-column: 2;
+  
 
 }
 
@@ -146,3 +148,38 @@ article h2{
   height: 100%;
   border-radius: 10px;
 }
+
+#skils-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skils-container .info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skils-container .nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skils-container .porcent{
+  font-weight: bold;
+  color: var(--destaque);
+}
+#skils-container .barra{
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 5px;
+}
+
+#skils-container .progresso{
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 5px;
+}
+

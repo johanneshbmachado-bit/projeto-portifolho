@@ -183,3 +183,8 @@ article h2{
   border-radius: 5px;
 }
 
+@media (min-width: 768px){
+  #skils-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

@@ -185,6 +185,6 @@ article h2{
 
 @media (min-width: 768px){
   #skils-container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -183,6 +183,37 @@ article h2{
   border-radius: 5px;
 }
 
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 10px;
+  border-left: 6px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-left-width 0.5s, border-color 0.5s;
+}
+
+#formacao-container .curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao{
+  font-size: 1.1em;
+  color: var(--destaque-inverso);
+}
+
+
 @media (min-width: 768px){
   #skils-container{
     grid-template-columns: 1fr 1fr;

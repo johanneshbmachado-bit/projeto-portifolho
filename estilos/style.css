@@ -130,11 +130,6 @@ article{
   border-radius: 10px;
 }
 
-#projeto {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 article h2{
   color: var(--destaque);
   margin-bottom: 10px;
@@ -221,7 +216,7 @@ article h2{
 
 #projeto-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 20px;
 }
 
@@ -247,6 +242,22 @@ article h2{
   object-fit: cover;
   overflow: hidden;
   border-radius: 10px;
+}
+
+footer{
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+
+footer a{
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover{
+  color: var(--destaque-inverso);
 }
 
 @media (min-width: 768px){

@@ -22,11 +22,21 @@
   --fundo-card:#ffffff;
 }
 
+body.escuro{
+  --fundo-principal:#222222;
+  --texto:#e0e0e0;
+  --texto-inverso:#333333;
+  --destaque:#ff5522;
+  --destaque-inverso:#a73917;
+  --fundo-card:#444444;
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header{
@@ -303,56 +313,5 @@ footer a:hover{
   }
 }
 
-
-/* media query de responsividade (max-width) preservada para referência:
-@media (max-width: 767px){
-  header{
-    padding: 15px;
-  }
-
-  #menu ul{
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-
-  #menu a{
-    padding: 8px 10px;
-    font-size: 0.9em;
-  }
-
-  main{
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 10px;
-    padding: 0 10px;
-  }
-
-  #ficha{
-    grid-column: 1;
-    padding: 15px;
-  }
-
-  #detalhes{
-    grid-column: 1;
-  }
-
-  article{
-    margin: 10px 0;
-    padding: 15px;
-  }
-
-  #social{
-    font-size: 1.2em;
-    gap: 0.8em;
-  }
-
-  #social a{
-    padding: 8px;
-    font-size: 0.9em;
-    flex: 0 1 calc(50% - 5px);
-  }
-}
-*/
 
 
